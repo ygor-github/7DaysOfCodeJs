@@ -1,0 +1,25 @@
+:root {
+    --main-bg-color: #333;
+    --main-text-color: #f4f4f4;
+    --main-link-color: #007bff;
+    --main-link-hover-color: #0056b3;
+    --main-border-color: #ccc;
+    --main-border-radius: 5px;
+    --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --main-transition: 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.titulo_main{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 10px;
+}
