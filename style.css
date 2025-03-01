@@ -34,3 +34,13 @@ body {
     overflow-wrap: break-word;
     max-width: 100%;
 }
+
+
+#enquete img{
+    width: 80%;
+    display: block;
+    
+}
+#content{
+    color: whitesmoke;
+}

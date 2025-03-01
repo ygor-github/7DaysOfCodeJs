@@ -24,48 +24,53 @@
     <div class="cardDay text-secondary bg-white p-3 rounded col-12 col-md-auto">
       <h1 class="fs-5 text-dark">Day 1</h1>
       <p>Compara valores y tipo</p>
-  
+
       <form id="form1">
         <input type="text" class="form-control mb-2" id="value1" name="value1" placeholder="Insira o valor A" required>
         <input type="text" class="form-control mb-2" id="value2" name="value2" placeholder="Insira o valor B" required>
         <button id="btnComparar" type="submit" class="btn btn-primary mt-4">Comparar</button>
         <button id="btnLimpiar" type="reset" class="btn btn-primary mt-4" disabled>Limpiar</button>
       </form>
-  
-      <div><p id="resultado" class="text-primary mt-2">Clica en comparar para ver o resultado</p></div>
+
+      <div>
+        <p id="resultado" class="text-primary mt-2">Clica en comparar para ver o resultado</p>
+      </div>
     </div>
-    
-    <div class="cardDay text-secondary bg-white p-3 rounded col-12 col-md-auto">
-      <h1 class="fs-5 text-dark">Day 1</h1>
-      <p>Compara valore y tipo</p>
-  
-      <form id="form1">
-        <input type="text" class="form-control mb-2" id="value1" name="value1" placeholder="Insira o valor A" required>
-        <input type="text" class="form-control mb-2" id="value2" name="value2" placeholder="Insira o valor B" required>
-        <button   type="submit" class="btn btn-primary" disabled>Comparar</button>
+
+    <!-- Day2 -->
+    <div class="cardDay text-secondary bg-dark p-3 rounded border border-secondary col-12 col-md-auto">
+      <h1 class="fs-5 text-light">Day 2</h1>
+      <p>Enquete</p>
+
+      <form id="enquete">
+        <div class="" id="content">
+
+
+          <input type="text" class="form-control mb-2" id="userName" name="userName" placeholder="Digite seu nome"
+            required>
+          <input type="number" min="5" max="80" class="form-control mb-2" id="age" name="age"
+            placeholder="Quantos anos você tem?" required>
+          <select class="form-select" name="learningCode" id="learningCode">
+            <option value="Python">Python</option>
+            <option value="Javascript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="Csharp">C#</option>
+            <option value="Php">PHP</option>
+            <option value="Cplus">C++</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Swift">Swift</option>
+            <option value="Go">Go</option>
+            <option value="Typescript">TypeScript</option>
+            <option value="" disabled selected>Qual linguagem voce aprende?</option>
+          </select>
+
+        </div>
+        <button id="send" type="submit" class="btn btn-primary mt-4">Enviar</button>
+        <button id="negation" type="button" class="btn btn-primary mt-4 d-none">Terminar</button>
       </form>
-  
-      <div id="resultado" class="text-primary text-center text-break mt-2">Clica en comparar para ver o resultado</div>
     </div>
 
-  
   </div>
-  
-
-
-
-  <!-- Day 1 Form (hidden) -->
-  <div id="form1" class="d-none">
-
-  </div>
-
-  <!-- Day 2 Example -->
-  <div id="example2" class="d-none">
-    <p>Example 2 inside modalTemplate</p>
-  </div>
-
-
-
 
   <script src="app.js/day1.js"></script>
   <script src="app.js/Day2.js"></script>
