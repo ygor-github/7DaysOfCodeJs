@@ -23,4 +23,14 @@ body {
     font-size: 2em;
     margin-top: 10px;
 }
-  
+
+.cardDay {
+    height: 24rem;
+    width: 20rem;
+}
+
+#resultado {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}

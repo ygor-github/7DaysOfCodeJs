@@ -18,41 +18,39 @@
 
 
 
-  <!-- Buttons -->
-  <div class="d-flex justify-content-center gap-3 text-center">
-    <!-- Day 1 -->
-    <!-- Dia 1 -->
-    <div class="text-secondary bg-white p-3 rounded" id="ModalTemplate">
-      <div class="">
-        <div class="">
-          <div class="">
-            <h1 class=" fs-5 text-dark" id="ModalTemplaTitle">Day 1</h1>
-            <p>Compara dois valores</p>
 
-          </div>
-          <div class="tabbody" id="TabBody">
-            <form>
-              <input type="text" class="form-control" id="value1" name="value1" placeholder="Insira o valor A"
-                required><br>
+  <div class="d-flex flex-wrap justify-content-center gap-3 text-center">
 
-              <input type="text" class="form-control" id="value2" name="value2" placeholder="Insira o valor B"
-                required><br>
-
-              <button type="submit" class="btn btn-primary">Comparar</button>
-            </form>
-           
-          </div>
-          <div class="text-primary">
-            <div id="resultado" class="mt-3">Clica en comparar para ver o resultado</div>
-          </div>
-        </div>
-      </div>
+    <div class="cardDay text-secondary bg-white p-3 rounded col-12 col-md-auto">
+      <h1 class="fs-5 text-dark">Day 1</h1>
+      <p>Compara valores y tipo</p>
+  
+      <form id="form1">
+        <input type="text" class="form-control mb-2" id="value1" name="value1" placeholder="Insira o valor A" required>
+        <input type="text" class="form-control mb-2" id="value2" name="value2" placeholder="Insira o valor B" required>
+        <button id="btnComparar" type="submit" class="btn btn-primary mt-4">Comparar</button>
+        <button id="btnLimpiar" type="reset" class="btn btn-primary mt-4" disabled>Limpiar</button>
+      </form>
+  
+      <div><p id="resultado" class="text-primary mt-2">Clica en comparar para ver o resultado</p></div>
     </div>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalTemplate"
-      data-title="Example 2" data-content="example2">
-      <b>2 Day</b> <br> Click here!
-    </button>
+    
+    <div class="cardDay text-secondary bg-white p-3 rounded col-12 col-md-auto">
+      <h1 class="fs-5 text-dark">Day 1</h1>
+      <p>Compara valore y tipo</p>
+  
+      <form id="form1">
+        <input type="text" class="form-control mb-2" id="value1" name="value1" placeholder="Insira o valor A" required>
+        <input type="text" class="form-control mb-2" id="value2" name="value2" placeholder="Insira o valor B" required>
+        <button   type="submit" class="btn btn-primary" disabled>Comparar</button>
+      </form>
+  
+      <div id="resultado" class="text-primary text-center text-break mt-2">Clica en comparar para ver o resultado</div>
+    </div>
+
+  
   </div>
+  
 
 
 
