@@ -1,15 +1,15 @@
 // Función para manejar el formulario y evitar que se recargue la página
-document.getElementById('miFormulario').addEventListener('submit', function(event) {
+document.getElementById('form1').addEventListener('submit', function (event) {
     event.preventDefault(); // Evita que el formulario se recargue
-
+    console.log('revision');
     // Obtener los valores de los inputs
-    let a = document.getElementById('valor1').value;
-    let b = document.getElementById('valor2').value;
+    let a = document.getElementById('value1').value;
+    let b = document.getElementById('value2').value;
 
     // Obtener los tipos de las variables
     let typeOfa = typeof a;
     let typeOfb = typeof b;
-
+    console.log('Boton clicado');
     // Comparar los valores
     if (a == b) { // Comparación no estricta (solo valores)
         let valor = "têm o mesmo valor";
@@ -26,8 +26,3 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
         }
     }
 });
-
-// Función que se ejecuta cuando el usuario hace clic en el enlace
-function registerform() {
-    alert("Formulario interactivo cargado correctamente!");
-}
