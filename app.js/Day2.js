@@ -1,5 +1,4 @@
 let content = document.getElementById('content');
-let copyBody = content.cloneNode(true);
 let contentMain = content;
 let negationButton = document.getElementById('negation');
 let sendButton = document.getElementById('send');
@@ -24,12 +23,12 @@ enquete.addEventListener('submit', function (event) {
     negationButton.classList.remove('d-none');
 
     sendButton.addEventListener('click', function () {
-        console.log(currentMessage);
+    
         if (currentMessage === 1) {
             contentMain.innerHTML = message2;
             sendButton.innerText = 'SI';
             negationButton.innerText = 'NO';
-            console.log(currentMessage);
+        
         } else if (currentMessage === 2) {
             contentMain.innerHTML = message3;
             sendButton.classList.add('d-none');
@@ -40,7 +39,7 @@ enquete.addEventListener('submit', function (event) {
     });
 
     negationButton.addEventListener('click', function () {
-        console.log(currentMessage);
+    
         if (currentMessage === 1 || currentMessage === 3 || currentMessage === 4) {
             location.reload();
         } else if (currentMessage === 2) {
