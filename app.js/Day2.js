@@ -9,32 +9,33 @@ enquete.addEventListener('submit', function (event) {
     let userName = document.getElementById('userName').value;
     let age = document.getElementById('age').value;
     let learningCode = document.getElementById('learningCode').value;
- 
+    let message1 = `Olá ${userName}!, você tem ${age} anos e já está aprendendo ${learningCode}`;
+let message2 = `Você gosta de estudar ${learningCode}`;
+let message3 = `Muito bom! Continue estudando e você terá muito sucesso en ${learningCode}!`;
+let message4 = `Ahh que pena... Já tentou aprender outras linguagens?`;
+let currentMessage = 0;
+let contentMain = content;
 
-    let resultMessage = `Olá ${userName}!, você tem ${age} anos e já está aprendendo ${learningCode}`;
-    content.innerHTML = '<img src="/img/hi.webp" />' + resultMessage;
-    
+    content.innerHTML = '<img src="/img/hi.webp" />' + message1;
     sendButton.type = 'button';
     sendButton.innerText = 'Continuar';
     negationButton.classList.remove('d-none');
 
+});
 
-sendButton.addEventListener('click', function(){
+
+function nextMessage(){
+if (currentMessage === 0){
 alert('Boton clicado SI');
 content.innerHTML = `Você gosta de estudar ${learningCode} ?`;
  sendButton.innerText = 'SI';
     negationButton.innerText = 'NO';
+};
 
 
-});
+sendButton.addEventListener('click', nextMessage);
+negationButton.addEventListener('click', nextMessage);
 
-negationButton.addEventListener('click', function(){
-qalert('Boton clicado NO');
-})
-
-
-
-});
 /*
 sendButton.addEventListener('click', handleButtonClick);
 negationButton.addEventListener('click', handleButtonClick);
