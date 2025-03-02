@@ -18,8 +18,24 @@ enquete.addEventListener('submit', function (event) {
     sendButton.innerText = 'Continuar';
     negationButton.classList.remove('d-none');
 
+
+sendButton.addEventListener('click', function(){
+alert('Boton clicado SI');
+content.innerHTML = `Você gosta de estudar ${learningCode} ?`;
+ sendButton.innerText = 'SI';
+    negationButton.innerText = 'NO';
+
+
 });
 
+negationButton.addEventListener('click', function(){
+qalert('Boton clicado NO');
+})
+
+
+
+});
+/*
 sendButton.addEventListener('click', handleButtonClick);
 negationButton.addEventListener('click', handleButtonClick);
 let message2 = `Você gosta de estudar ${learningCode} ?\nResponda com o número 1 para SIM ou 2 para NÃO.?`;
@@ -29,7 +45,7 @@ function handleButtonClick(event){
     }
 
 }
-
+*/
 // let confirm = prompt(`Você gosta de estudar ${learningCode} ?\nResponda com o número 1 para SIM ou 2 para NÃO.?`);
 // if (confirm == 1) {
 //     alert(`Muito bom! Continue estudando e você terá muito sucesso en ${learningCode}!`);
